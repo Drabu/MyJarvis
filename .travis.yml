@@ -25,3 +25,8 @@ env:
     - EMULATOR_API=21
 
     - ANDROID_BUILD_TOOLS=24.0.2
+
+before_install:
+
+  - chmod +x gradlew
+  - ./gradlew dependencies || true
