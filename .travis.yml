@@ -29,6 +29,7 @@ android:
     - platform-tools
     - build-tools-$ANDROID_BUILD_TOOLS
     - android-$ANDROID_API
+    - android-22
     - android-$EMULATOR_API_LEVEL
     - extra-google-m2repository
     - extra-android-m2repository # for design library
