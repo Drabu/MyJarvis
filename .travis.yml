@@ -24,5 +24,7 @@ android:
     - addon-google_apis-google-$ANDROID_API_LEVEL
 before_install:
   - chmod +x gradlew
+  - mkdir "$ANDROID_HOME/licenses" || true
+  - cp ./licenses/* "$ANDROID_HOME/licenses/"
 script:
   - ./gradlew build check
